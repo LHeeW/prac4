@@ -1,0 +1,120 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#sideBar a{
+    position: fixed;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(200,123,123);
+    border-radius: 0 5px 5px 0;
+}
+
+#sideBar a:hover{
+    left: 0;
+}
+
+.sidenav a{
+    background-color: black;
+}
+
+.sidenav a::before{
+    content: "+";
+    float: right;
+}
+.sidenav a:hover:before{
+    content: "-";
+    float: right;
+}
+
+#Home, #Team, #Matches, #History, #Store{
+    z-index:1;
+}
+
+#Home{
+    top:80px;
+}
+#Team{
+    top:140px;
+}
+#Matches{
+    top:200px;
+}
+#History{
+    top:260px;
+}
+#Store{
+    top:320px;
+}
+
+.para-img1{
+    background-image: url("arsenal_inner.jpg");
+}
+.para-img2{
+    background-image: url("arsenal_outer.jpg");
+}
+.para-img3{
+    background-image: url("arsenal_logo.jpg");
+}
+.para-img4{
+    background-image: url("arsenal-uniform.jpg");
+}
+
+.parallax{
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slogan{
+    z-index:0;
+    position: absolute;
+    width:100%;
+    height: 500px;
+}
+.slogan-box{
+    padding: 50px;
+    margin: 0 auto;
+    width: 1200px;
+}
+.coyg, .ars{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+.ars{
+    font-size: 10em;
+}
+.coyg{
+    font-size: 5em;
+}
+
+@media(max-width:1500px){
+    .parallax{
+        width: 1500px;
+        height: 800px;
+    }
+    .slogan{
+        z-index:0;
+        position: absolute;
+        width:1500px;
+        height: 500px;
+    }
+    .slogan-box{
+        padding: 50px;
+        margin: 0 auto;
+        width: 1200px;
+    }
+}

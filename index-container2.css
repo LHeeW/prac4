@@ -1,0 +1,49 @@
+.container2-grid{
+    display: grid;
+    grid-template-rows: repeat(2,300px);
+    grid-template-columns: repeat(3, 500px);
+    justify-content: space-around;
+}
+.match-info{
+    margin-top: 120px;
+}
+.match-flex{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.match-info-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,.7);
+}
+.match-flex:hover .match-info-overlay{
+    opacity: 1;
+}
+.overlay-text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.match-flex-center{
+    font-size: 80px;
+}
+.match-text{
+    width: 1200px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
