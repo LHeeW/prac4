@@ -29,6 +29,7 @@
 }
 .overlay-text{
     color: white;
+    font-family: "Hi Melody";
     font-size: 20px;
     position: absolute;
     top: 50%;

@@ -10,11 +10,12 @@ body{
 
 #sideBar a{
     position: fixed;
-    left: -80px;
+    left: -100px;
     transition: 0.3s;
     padding: 15px;
     width: 100px;
     text-decoration: none;
+    font-family: "Montserrat";
     font-size: 20px;
     color: rgb(200,123,123);
     border-radius: 0 5px 5px 0;
@@ -90,6 +91,7 @@ body{
     width: 1200px;
 }
 .coyg, .ars{
+    font-family: "Allerta";
     color: red;
     font-weight: bold;
     text-align: center;
