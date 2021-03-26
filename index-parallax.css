@@ -29,11 +29,11 @@ body{
     background-color: black;
 }
 
-.sidenav a::before{
+.sidenav a::after{
     content: "+";
     float: right;
 }
-.sidenav a:hover:before{
+.sidenav a:hover::after{
     content: "-";
     float: right;
 }
