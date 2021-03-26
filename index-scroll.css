@@ -8,6 +8,14 @@
 .sa-scaleUp {
     transform: scale(.5);
 }
+/* 왼쪽에서 오른쪽으로 페이드 인 */
+.sa-right {
+    transform: translate(-100px, 0);
+}
+/* 오른쪽에서 왼쪽으로 페이드 인 */
+.sa-left {
+    transform: translate(100px, 0);
+}
 
 .sa.show {
     opacity: 1;
